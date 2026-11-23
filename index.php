@@ -35,8 +35,8 @@ require __DIR__ . '/includes/header.php';
 
 
 <section class="about-section">
-  <div class="section-head"><div><span class="eyebrow">CLASIFICACIÓN</span><h2>¿Qué tipo de alimentos puedes donar?</h2><p>Por seguridad, dona únicamente alimentos en condiciones adecuadas para consumo. Revisa su conservación y fecha de caducidad antes de entregarlos.</p></div></div>
-  <div class="ticker" aria-hidden="true"><div class="ticker-track"><span>🥦 Verduras</span><span>🍎 Frutas</span><span>🥖 Pan</span><span>🥫 Conservas</span><span>🌾 Granos</span><span>🥛 Lácteos</span><span>📦 Empacados</span><span>🥦 Verduras</span><span>🍎 Frutas</span><span>🥖 Pan</span><span>🥫 Conservas</span><span>🌾 Granos</span><span>🥛 Lácteos</span><span>📦 Empacados</span></div></div>
+  <div class="section-head"><div><span class="eyebrow">CLASIFICACIÓN</span><h2>¿Qué tipo de alimentos puedes donar?</h2><p>
+  <div class="ticker" aria-hidden="true"><div class="ticker-track"><span>🥦 Verduras</span><span>🍎 Frutas</span><span>🥖 Pan</span><span>🥫 Conservas</span><span>🌾 Granos</span><span>🥛 Lácteos</span><span>📦 Empacados</span><span>🥦 Verduras</span><span>🍎 Frutas</span><span>🥖 Pan</span><span>🥫 Conservas</span><span>🌾 Granos</span><span>🥛 Lácteos</span><span>📦 Empacados</span></div></div>Por seguridad, dona únicamente alimentos en condiciones adecuadas para consumo. Revisa su conservación y fecha de caducidad antes de entregarlos.</p></div></div>
 </section>
 
 <section class="cta-panel"><div><h2>Una pequeña donación puede ser de gran ayuda.</h2><p>Registra alimentos que estén en buen estado y contribuye a una comunidad con menos desperdicio.</p></div><a class="btn teal" href="<?= logged_in() ? 'publicar_donacion.php' : 'registro.php' ?>">Comenzar</a></section>
