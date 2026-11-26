@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="RescatAlimentos" xmlns:c2pa="http://c2pa.org/manifest">
+  <title>RescatAlimentos</title>
+  <rect width="120" height="120" rx="28" fill="#E3F4E8"/>
+  <g transform="translate(6,1) scale(0.9)">
+    <circle cx="36" cy="54" r="12" fill="#7BC890"/>
+    <path d="M36 43 C36 39 38 37 41 36" fill="none" stroke="#1B5E3A" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M58 64 C48 56 46 40 52 28 C62 36 64 52 58 64Z" fill="#2E8B57"/>
+    <path d="M64 64 C70 52 80 46 92 46 C92 58 80 66 64 64Z" fill="#4DAA70"/>
+    <path d="M22 64 L98 64 L92 100 Q91 104 87 104 L33 104 Q29 104 28 100 Z" fill="#1B5E3A"/>
+    <rect x="17" y="58" width="86" height="10" rx="4" fill="#2E8B57"/>
+    <path d="M60 97 C50 90 46 85 46 81 C46 77.500 48.500 75 52 75 C55 75 58 77 60 80 C62 77 65 75 68 75 C71.500 75 74 77.500 74 81 C74 85 70 90 60 97Z" fill="#E3F4E8"/>
+  </g>
+</svg>
