@@ -10,7 +10,15 @@
   <link rel="icon" type="image/svg+xml" href="assets/img/icono-rescatalimentos-v3.svg">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/mejoras-visuales.css">
+<<<<<<< HEAD
   <link rel="stylesheet" href="assets/css/mejoras-v6.css?v=9">
+=======
+<<<<<<< HEAD
+  <link rel="stylesheet" href="assets/css/mejoras-v6.css?v=9">
+=======
+  <link rel="stylesheet" href="assets/css/mejoras-v6.css?v=6">
+>>>>>>> 9da508f49a06650544f8ce6c0ffe42e164fff8e8
+>>>>>>> a3953db6d7bf4f47f961a8c0c12bd817fa27425c
 </head>
 <body class="<?= in_array(($_SESSION['role'] ?? 'user'), ['admin','super_admin'], true) ? 'admin-dashboard-page' : '' ?> page-<?= e(basename($_SERVER['PHP_SELF'] ?? '', '.php')) ?>">
 <?php $currentPage = basename($_SERVER['PHP_SELF'] ?? ''); $publicPages = ['index.php','donaciones.php','foro.php','juego.php','publicar_donacion.php','mis_pedidos.php','centros.php','publicar_foro.php','login.php','registro.php']; ?>

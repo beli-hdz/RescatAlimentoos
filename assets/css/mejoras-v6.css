@@ -140,6 +140,10 @@ section.emergency-contact .emergency-whatsapp{
 .brand-mark{background:none!important;box-shadow:none!important;padding:0;border-radius:0;overflow:visible}
 .brand-mark img{display:block;width:100%;height:100%;object-fit:contain}
 @media(max-width:700px){.brand-logo{height:42px}}
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> a3953db6d7bf4f47f961a8c0c12bd817fa27425c
 
 /* ---------- v9 · Botón "Comenzar" en verde claro ---------- */
 .cta-panel .btn,.cta-panel .btn.teal{
@@ -181,3 +185,8 @@ html,body{overflow-x:hidden}
 .pw-reqs li.ok{color:#23724e}.pw-reqs li.ok:before{content:"✓";opacity:1;font-weight:700}
 html[data-theme=dark] .pw-bars i{background:#30463a}
 html[data-theme=dark] .pw-reqs li.ok{color:#8fd1ac}
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 9da508f49a06650544f8ce6c0ffe42e164fff8e8
+>>>>>>> a3953db6d7bf4f47f961a8c0c12bd817fa27425c
