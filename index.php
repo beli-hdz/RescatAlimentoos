@@ -21,7 +21,11 @@ require __DIR__ . '/includes/header.php';
     <h1>Donar, aprovechar y <em>ayudar</em>.</h1>
     <p>Somos una iniciativa comunitaria que busca conectar a personas con alimentos que pueden compartirse con quienes los necesitan. Aquí no se vende nada: las publicaciones son donaciones y el objetivo es reducir el desperdicio alimentario.</p>
     <div class="actions"><a class="btn teal" href="<?= logged_in() ? 'publicar_donacion.php' : 'registro.php' ?>">Quiero donar alimentos</a><a class="btn light" href="centros.php">Ver centros de donación</a></div>
+<<<<<<< HEAD
   </div><div class="hero-photo"><img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1100&q=85" alt="Frutas y verduras frescas en un mercado"><div class="hero-badge"><i>🛒</i><div><b><?= (int)$impact['d'] ?></b>donaciones entregadas</div></div></div>
+=======
+  </div><div class="hero-photo"><img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1100&q=85" alt="Frutas y verduras frescas en un mercado"><div class="hero-badge"><i>🌱</i><div><b><?= (int)$impact['d'] ?></b>donaciones entregadas</div></div></div>
+>>>>>>> 9da508f49a06650544f8ce6c0ffe42e164fff8e8
 </section>
 <div class="impact-strip"><div><strong><?= (int)$impact['t'] ?></strong><span>donaciones<br>registradas</span></div><div><strong><?= (int)$impact['d'] ?></strong><span>entregas<br>completadas</span></div><div><strong><?= $centersCount ?></strong><span>centros de<br>donación activos</span></div></div>
 
@@ -34,7 +38,14 @@ require __DIR__ . '/includes/header.php';
 </div></section>
 
 
+<<<<<<< HEAD
 <section class="about-section category-section"><div class="section-head"><div><span class="eyebrow">Clasificación</span><h2>¿Qué tipo de alimentos puedes donar?</h2><p>Selecciona la categoría correspondiente al publicar.</p></div></div><div class="category-chips"><span>🥦 Verduras</span><span>🍎 Frutas</span><span>🥖 Pan y panadería</span><span>🥫 Enlatados y conservas</span><span>🌾 Granos y cereales</span><span>🥛 Lácteos</span><span>📦 Alimentos empacados</span><span>✨ Otros</span></div><p class="notice">Por seguridad, dona únicamente alimentos en condiciones adecuadas para consumo. Revisa su conservación y fecha de caducidad antes de entregarlos.</p></section>
+=======
+<section class="about-section">
+  <div class="section-head"><div><span class="eyebrow">CLASIFICACIÓN</span><h2>¿Qué tipo de alimentos puedes donar?</h2><p>
+  <div class="ticker" aria-hidden="true"><div class="ticker-track"><span>🥦 Verduras</span><span>🍎 Frutas</span><span>🥖 Pan</span><span>🥫 Conservas</span><span>🌾 Granos</span><span>🥛 Lácteos</span><span>📦 Empacados</span><span>🥦 Verduras</span><span>🍎 Frutas</span><span>🥖 Pan</span><span>🥫 Conservas</span><span>🌾 Granos</span><span>🥛 Lácteos</span><span>📦 Empacados</span></div></div>Por seguridad, dona únicamente alimentos en condiciones adecuadas para consumo. Revisa su conservación y fecha de caducidad antes de entregarlos.</p></div></div>
+</section>
+>>>>>>> 9da508f49a06650544f8ce6c0ffe42e164fff8e8
 
 <section class="cta-panel"><div><h2>Una pequeña donación puede ser de gran ayuda.</h2><p>Registra alimentos que estén en buen estado y contribuye a una comunidad con menos desperdicio.</p></div><a class="btn teal" href="<?= logged_in() ? 'publicar_donacion.php' : 'registro.php' ?>">Comenzar</a></section>
 

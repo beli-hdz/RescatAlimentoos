@@ -49,6 +49,7 @@ require __DIR__ . '/includes/header.php';
 <div class="field"><label for="name">Nombre completo</label><input id="name" name="name" maxlength="100" required value="<?= e($_POST['name'] ?? '') ?>"></div>
 <div class="field"><label for="email">Correo electrónico</label><input id="email" name="email" type="email" maxlength="150" required value="<?= e($_POST['email'] ?? '') ?>"></div>
 <div class="field"><label for="username">Nombre de usuario</label><input id="username" name="username" data-alphanumeric minlength="4" maxlength="30" pattern="[A-Za-z0-9]{4,30}" required value="<?= e($_POST['username'] ?? '') ?>"><small class="small">De 4 a 30 letras y números, sin espacios.</small></div>
+<<<<<<< HEAD
 <div class="field"><label for="password">Contraseña</label><input id="password" name="password" type="password" minlength="8" maxlength="64" pattern="(?=.*[A-Za-z])(?=.*[0-9])[A-Za-z0-9]{8,64}" required><div class="pw-meter" id="pw-meter" data-level="0" aria-live="polite"><div class="pw-bars"><i></i><i></i><i></i><i></i></div><div class="pw-label"><span>Seguridad:</span><b id="pw-text">Escribe tu contraseña</b></div><ul class="pw-reqs"><li data-r="len">Mínimo 8 caracteres</li><li data-r="let">Al menos una letra</li><li data-r="num">Al menos un número</li><li data-r="long">12 o más caracteres (más segura)</li><li data-r="mix">Mayúsculas y minúsculas</li></ul></div></div>
 <button class="btn teal" type="submit">Crear cuenta</button>
 </form><p class="muted">¿Ya tienes cuenta? <a href="login.php"><strong>Inicia sesión</strong></a></p></section></div>
@@ -73,4 +74,9 @@ require __DIR__ . '/includes/header.php';
   i.addEventListener('input',upd);upd();
 })();
 </script>
+=======
+<div class="field"><label for="password">Contraseña</label><input id="password" name="password" type="password" minlength="8" maxlength="64" pattern="(?=.*[A-Za-z])(?=.*[0-9])[A-Za-z0-9]{8,64}" required><small class="small">Mínimo 8 caracteres, incluyendo letras y números.</small></div>
+<button class="btn teal" type="submit">Crear cuenta</button>
+</form><p class="muted">¿Ya tienes cuenta? <a href="login.php"><strong>Inicia sesión</strong></a></p></section></div>
+>>>>>>> 9da508f49a06650544f8ce6c0ffe42e164fff8e8
 <?php require __DIR__ . '/includes/footer.php'; ?>

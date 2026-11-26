@@ -4,7 +4,11 @@ require_once __DIR__ . '/includes/functions.php';
 require_login();
 $pageTitle = 'Publicar donación';
 $error = '';
+<<<<<<< HEAD
 $categories = ['Verduras','Frutas','Pan y panadería','Enlatados y conservas','Granos y cereales','Lácteos','Alimentos empacados','Otros'];
+=======
+$categories = ['Verduras','Frutas','Pan y panadería','Enlatados y conservas','Granos y cereales','Lácteos','Alimentos empacados','Comida preparada','Otros'];
+>>>>>>> 9da508f49a06650544f8ce6c0ffe42e164fff8e8
 $locations = mongo_rows($db->selectCollection('centers')->find(
     ['active' => true, 'center_type' => 'pickup_point'],
     ['sort' => ['name' => 1], 'collation' => rescat_sort_collation(), 'projection' => ['name' => 1]]
