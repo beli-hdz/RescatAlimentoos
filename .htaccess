@@ -1,0 +1,9 @@
+Options -Indexes
+
+# Carpetas internas: nunca deben abrirse desde el navegador
+RedirectMatch 404 ^/(scripts|vendor|docker|config|includes)(/|$)
+
+# Archivos sensibles o de infraestructura
+<FilesMatch "^(\.env.*|composer\.(json|lock)|Dockerfile|render\.yaml|\.gitignore|\.dockerignore)$">
+  Require all denied
+</FilesMatch>

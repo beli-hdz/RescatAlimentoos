@@ -1,0 +1,8 @@
+.env
+vendor/
+uploads/donaciones/*
+uploads/foro/*
+!uploads/donaciones/.htaccess
+!uploads/foro/.htaccess
+.DS_Store
+Thumbs.db

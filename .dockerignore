@@ -1,0 +1,9 @@
+.env
+.git
+vendor
+node_modules
+*.md
+uploads/donaciones/*
+uploads/foro/*
+!uploads/donaciones/.htaccess
+!uploads/foro/.htaccess

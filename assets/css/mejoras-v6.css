@@ -1,0 +1,142 @@
+/* RescatAlimentos · v6 — refinamiento global + pie compacto
+   Se carga al final (después de style.css y mejoras-visuales.css). */
+
+/* ---------- Base y tokens ---------- */
+:root{
+  --ra-r-sm:10px; --ra-r:16px; --ra-r-lg:22px;
+  --ra-sh-sm:0 1px 2px rgba(23,75,59,.06),0 6px 16px -8px rgba(23,75,59,.14);
+  --ra-sh-md:0 2px 4px rgba(23,75,59,.05),0 16px 34px -16px rgba(23,75,59,.26);
+  --ra-focus:0 0 0 3px rgba(61,137,103,.28);
+}
+html{scroll-behavior:smooth}
+body{line-height:1.6;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+::selection{background:#cfe6c9;color:#123a2e}
+h1,h2,h3{text-wrap:balance}
+p{text-wrap:pretty}
+a:focus-visible,button:focus-visible,summary:focus-visible,.btn:focus-visible{outline:3px solid var(--ra-leaf);outline-offset:2px;border-radius:8px}
+
+/* ---------- Superficies: mismo radio y sombra en todo el sitio ---------- */
+.card,.panel,.stat,.metric-card,.dashboard-widget,.forum-post,.auth-wrap,.empty{
+  border-radius:var(--ra-r);
+  border:1px solid var(--ra-line);
+  box-shadow:var(--ra-sh-sm);
+}
+.card{transition:transform .2s ease,box-shadow .2s ease}
+.card:hover{transform:translateY(-2px);box-shadow:var(--ra-sh-md)}
+.card-body{padding:16px 18px}
+.card h3{font-size:1.02rem;line-height:1.3}
+.tag{font-weight:700;letter-spacing:.01em}
+
+/* ---------- Encabezados de sección ---------- */
+.section-head{margin:34px 0 16px}
+.section-head h2{font-size:clamp(1.45rem,2.3vw,1.95rem);line-height:1.15}
+.section-head p{max-width:62ch}
+
+/* ---------- Botones ---------- */
+.btn{padding:10px 18px;font-size:.92rem;line-height:1.2;border-radius:12px;transition:transform .18s ease,box-shadow .18s ease,filter .18s ease}
+.btn:hover{transform:translateY(-1px);filter:brightness(1.05)}
+.btn:active{transform:translateY(0)}
+
+/* ---------- Formularios ---------- */
+.field label{font-size:.86rem;color:var(--ra-ink)}
+.field input,.field select,.field textarea{
+  border:1px solid #d3ddd4;border-radius:12px;background:var(--ra-paper);
+  transition:border-color .15s,box-shadow .15s
+}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--ra-leaf);box-shadow:var(--ra-focus)}
+
+/* ---------- Tablas ---------- */
+.table-wrap{border-radius:var(--ra-r);border:1px solid var(--ra-line);box-shadow:var(--ra-sh-sm)}
+th{background:var(--ra-sage);color:var(--ra-forest);font-size:.82rem;font-weight:700}
+td{font-size:.9rem}
+tbody tr{transition:background .15s}
+tbody tr:hover td{background:#f7faf6}
+
+/* ---------- Barra superior un poco más delgada ---------- */
+.topbar{min-height:58px;padding-top:7px;padding-bottom:7px}
+
+/* ---------- Contacto de emergencia (compacto) ---------- */
+section.emergency-contact{
+  width:min(1100px,91%);margin:28px auto 0;padding:12px 18px;gap:14px;
+  border-radius:16px;box-shadow:0 8px 20px -14px rgba(180,35,24,.35)
+}
+.emergency-copy{padding-left:44px}
+.emergency-copy:before{width:30px;height:30px;border-radius:10px;font-size:1rem}
+.emergency-copy strong{font-size:1rem;line-height:1.2}
+.emergency-copy p{margin-top:2px;font-size:.8rem;line-height:1.4}
+section.emergency-contact .emergency-call,
+section.emergency-contact .emergency-whatsapp{
+  gap:10px!important;min-height:44px!important;padding:6px 18px 6px 7px!important;
+  border-radius:13px!important;box-shadow:0 6px 14px -8px rgba(0,0,0,.45)!important
+}
+.ec-icon{width:30px;height:30px;border-radius:9px}
+.ec-icon svg{width:16px;height:16px}
+.ec-text small{font-size:.64rem;letter-spacing:0}
+.ec-text b{font-size:.95rem}
+@media(max-width:900px){
+  section.emergency-contact{grid-template-columns:1fr 1fr;padding:12px 14px}
+  .emergency-copy{grid-column:1/-1}
+  section.emergency-contact .emergency-call,section.emergency-contact .emergency-whatsapp{width:auto}
+}
+@media(max-width:480px){section.emergency-contact{grid-template-columns:1fr}}
+
+/* ---------- Pie de página (compacto) ---------- */
+.site-footer{
+  margin-top:36px!important;
+  padding:22px max(5%,calc((100% - 1100px)/2)) 12px!important;
+  border-radius:22px 22px 0 0;
+  background:radial-gradient(420px 150px at 92% 0,#2d6b52 0,transparent 70%),#123a2e
+}
+.site-footer .footer-inner,.site-footer .footer-inner-redes{
+  display:flex!important;align-items:center;justify-content:space-between;
+  gap:14px 36px;flex-wrap:wrap;padding-bottom:14px!important
+}
+.footer-brand-block{display:flex;align-items:center;gap:8px 18px;flex-wrap:wrap;min-width:0;flex:1 1 380px}
+.footer-brand{font-size:1.02rem}
+.footer-brand .brand-mark{width:28px;height:28px;border-radius:9px;margin-right:8px}
+.footer-brand .brand-mark svg{width:15px;height:15px}
+.footer-brand-block p{margin:0;max-width:360px;font-size:.78rem;line-height:1.5}
+.footer-social{flex-direction:row!important;align-items:center;gap:12px!important}
+.footer-social>strong{font-size:.8rem;font-weight:600;color:#cfe3d4}
+.social-links{flex-wrap:nowrap!important;gap:8px!important}
+.social-links a.soc{
+  min-width:0!important;width:32px;height:32px!important;padding:0!important;gap:0;
+  justify-content:center;border-radius:10px!important
+}
+.social-links a.soc .soc-ico{width:32px;height:32px;border-radius:10px;background:transparent}
+.social-links a.soc .soc-ico svg{width:15px;height:15px}
+.social-links a.soc:hover{transform:translateY(-2px)}
+.soc-txt{display:none!important}
+.footer-bottom{padding-top:10px;font-size:.72rem;gap:6px 15px;flex-wrap:wrap}
+.footer-bottom em{font-style:normal;opacity:.7}
+@media(min-width:700px){.footer-bottom span:last-child{margin-right:150px}}
+@media(max-width:700px){
+  .site-footer{padding-bottom:62px!important}
+  .site-footer .footer-inner-redes{flex-direction:column;align-items:flex-start;gap:12px}
+  .footer-brand-block{flex:0 0 auto}
+}
+
+/* ---------- Botón de ayuda con IA (más pequeño) ---------- */
+.chat-widget{right:14px;bottom:14px;gap:8px}
+.chat-launcher{
+  display:inline-flex;align-items:center;gap:7px;
+  padding:9px 15px!important;font-size:.82rem;
+  box-shadow:0 8px 20px -8px rgba(23,75,59,.55)!important
+}
+.chat-launcher svg{width:15px;height:15px;flex:none}
+
+/* ---------- Movimiento reducido ---------- */
+@media(prefers-reduced-motion:reduce){
+  *,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+}
+
+/* === Botón "Comenzar" del CTA: visible sobre el fondo verde === */
+.cta-panel .btn,.cta-panel .btn.teal{background:#f3e8d4;color:#174b3b!important;box-shadow:0 6px 16px rgba(0,0,0,.22)}
+.cta-panel .btn:hover,.cta-panel .btn.teal:hover{background:#fff;color:#174b3b!important;filter:none}
+
+/* === Logo e icono nuevos (v3) === */
+.brand-logo-link{display:inline-flex;align-items:center}
+.brand-logo{display:block;height:52px;width:auto;max-width:100%}
+.brand-mark{background:none!important;box-shadow:none!important;padding:0;border-radius:0;overflow:visible}
+.brand-mark img{display:block;width:100%;height:100%;object-fit:contain}
+@media(max-width:700px){.brand-logo{height:42px}}
